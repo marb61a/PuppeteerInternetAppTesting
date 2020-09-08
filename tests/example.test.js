@@ -38,6 +38,10 @@ describe("Homepage visit", async () => {
 
     it('should visit checkbox page', async() => {
         await checkboxPage.visit();
+        
+        await page.waitForSelector('#checkboxes > input:nth-child(1)');
+        await page.click('#checkboxes > input:nth-child(1)');
+
     });
 
     it('should visit context-menu page', async() => {

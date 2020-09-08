@@ -4,4 +4,9 @@ export default class ContextMenuPage extends BasePage{
     async visit(){
         await page.goto("https://the-internet.herokuapp.com/context_menu");
     }
+
+    async isHotSpotPresent(){
+        await page.waitForSelector("#hot-spot");
+    }
+    
 }
