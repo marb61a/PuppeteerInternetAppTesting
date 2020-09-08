@@ -5,6 +5,8 @@ import NewWindowPage from '../pages/NewWindowPage';
 import RedirectPage from '../pages/RedirectPage';
 import KeyPressPage from '../pages/KeyPressPage';
 import EntryAdPage from '../pages/EntryAdPage';
+import ChallengingDomPage from '../pages/ChallengingDomPage';
+import FileUploadPage from '../pages/FileUploadPage';
 
 describe("Homepage visit", async () => {
     let homePage;
@@ -14,6 +16,8 @@ describe("Homepage visit", async () => {
     let redirectPage;
     let keyPressPage;
     let entryAdPage;
+    let challengingDomPage;
+    let fileUploadPage;
 
     beforeAll(async () => {
         jest.setTimeout(10000);
@@ -24,6 +28,8 @@ describe("Homepage visit", async () => {
         redirectPage = new RedirectPage();
         keyPressPage = new KeyPressPage();
         entryAdPage = new EntryAdPage();
+        challengingDomPage = new ChallengingDomPage();
+        fileUploadPage = new FileUploadPage();
     });
 
     it('Homepage should work', async () => {
@@ -54,4 +60,11 @@ describe("Homepage visit", async () => {
         await entryAdPage.visit();
     });
 
+    it('should visit challengind dom page', async() => {
+        await challengingDomPage.visit();
+    });
+
+    it('should visit file upload page', async() => {
+        await fileUploadPage.visit();
+    });
 });
