@@ -1,6 +1,6 @@
 import ChallengingDomPage from '../pages/ChallengingDomPage';
 
-describe('Context Menu Page tests', async () => {
+describe('Challenging DOM Page tests', () => {
     let challengingDomPage;
 
     beforeAll(async () => {

@@ -1,6 +1,6 @@
 import ContextMenuPage from '../pages/ContextMenuPage';
 
-describe('Context Menu Page tests', async () => {
+describe('Context Menu Page tests', () => {
     let contextMenuPage;
 
     beforeAll(async () => {

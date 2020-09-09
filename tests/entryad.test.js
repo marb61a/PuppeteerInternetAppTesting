@@ -1,6 +1,6 @@
 import EntryAdPage from '../pages/EntryAdPage';
 
-describe('Context Menu Page tests', async () => {
+describe('Entry Ad Page tests', () => {
     let entryAdPage;
 
     beforeAll(async () => {
