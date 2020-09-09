@@ -4,7 +4,8 @@
   "description": "Using internet app for testing",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "test:context": "jest --forceExit"
   },
   "repository": {
     "type": "git",
