@@ -1,6 +1,6 @@
 import CheckboxPage from '../pages/CheckboxPage';
 
-describe('Checkbox page tests', async () => {
+describe('Checkbox page tests', () => {
     let checkboxPage;
 
     beforeAll(async () => {
@@ -16,5 +16,5 @@ describe('Checkbox page tests', async () => {
         await page.waitForSelector('#checkboxes > input:nth-child(1)');
         await page.click('#checkboxes > input:nth-child(1)');
     });
-    
+
 });
