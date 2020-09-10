@@ -12,4 +12,11 @@ describe('New Window Page tests', () => {
         await newWindowPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/newwindow.png",
+            fullPage: true
+        });
+    });
+
 });

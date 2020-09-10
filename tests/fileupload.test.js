@@ -12,4 +12,11 @@ describe('File upload tests', () => {
         await fileUploadPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/fileupload.png",
+            fullPage: true
+        });
+    });
+
 });

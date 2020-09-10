@@ -12,4 +12,11 @@ describe('Keypress tests', () => {
         await keyPressPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/keypress.png",
+            fullPage: true
+        });
+    });
+
 });

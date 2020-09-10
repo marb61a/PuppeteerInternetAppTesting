@@ -17,4 +17,11 @@ describe('Checkbox page tests', () => {
         await page.click('#checkboxes > input:nth-child(1)');
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/checkbox.png",
+            fullPage: true
+        });
+    });
+
 });
