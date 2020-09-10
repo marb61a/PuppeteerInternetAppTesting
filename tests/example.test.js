@@ -8,10 +8,6 @@ describe("Homepage visit", () => {
         homePage = new HomePage();
     });
 
-    // afterAll(async () => {
-    //     await global.__BROWSER_GLOBAL__.close();
-    // });
-
     it('Homepage should work', async () => {
         await homePage.visit();
     });
