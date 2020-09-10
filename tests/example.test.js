@@ -8,12 +8,19 @@ describe("Homepage visit", () => {
         homePage = new HomePage();
     });
 
-    afterAll(async () => {
-        await global.__BROWSER_GLOBAL__.close();
-    });
+    // afterAll(async () => {
+    //     await global.__BROWSER_GLOBAL__.close();
+    // });
 
     it('Homepage should work', async () => {
         await homePage.visit();
+    });
+
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/homepage.png",
+            fullPage: true
+        });
     });
 
 });

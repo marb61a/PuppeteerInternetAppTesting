@@ -12,4 +12,11 @@ describe('Entry Ad Page tests', () => {
         await entryAdPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/entryad.png",
+            fullPage: true
+        });
+    });
+
 });

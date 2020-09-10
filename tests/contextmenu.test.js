@@ -12,4 +12,11 @@ describe('Context Menu Page tests', () => {
         await contextMenuPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/contextmenu.png",
+            fullPage: true
+        });
+    });
+
 });

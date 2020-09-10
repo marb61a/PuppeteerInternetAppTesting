@@ -12,4 +12,11 @@ describe('Redirect Page tests', () => {
         await redirectPage.visit();
     });
 
+    it('should generate screenshot', async () => {
+        await page.screenshot({
+            path: "screenshots/redirect.png",
+            fullPage: true
+        });
+    });
+
 });
