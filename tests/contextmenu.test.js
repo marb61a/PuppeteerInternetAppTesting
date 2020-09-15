@@ -9,9 +9,9 @@ describe('Context Menu Page tests', () => {
     });
 
     it('should visit context-menu page', async() => {
-        await page.on('displayMessage', async ()=> {
-            await displayMessage.dismiss();
-        });
+        // await page.on('displayMessage', async ()=> {
+        //     await displayMessage.dismiss();
+        // });
 
         await contextMenuPage.visit();
     });

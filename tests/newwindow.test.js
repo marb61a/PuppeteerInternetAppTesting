@@ -12,6 +12,10 @@ describe('New Window Page tests', () => {
         await newWindowPage.visit();
     });
 
+    it('should open a new browser tab', async () => {
+        
+    })
+
     it('should generate screenshot', async () => {
         await page.screenshot({
             path: "screenshots/newwindow.png",
