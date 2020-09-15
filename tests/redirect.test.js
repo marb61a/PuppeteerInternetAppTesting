@@ -4,7 +4,7 @@ describe('Redirect Page tests', () => {
     let redirectPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         redirectPage = new RedirectPage();
     });
 

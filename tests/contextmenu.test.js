@@ -4,7 +4,7 @@ describe('Context Menu Page tests', () => {
     let contextMenuPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         contextMenuPage = new ContextMenuPage();
     });
 

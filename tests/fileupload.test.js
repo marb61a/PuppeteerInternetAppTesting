@@ -4,7 +4,7 @@ describe('File upload tests', () => {
     let fileUploadPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         fileUploadPage = new FileUploadPage();
     });
 

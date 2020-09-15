@@ -4,7 +4,7 @@ describe('Entry Ad Page tests', () => {
     let entryAdPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         entryAdPage = new EntryAdPage();
     });
 

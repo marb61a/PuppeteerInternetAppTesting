@@ -4,7 +4,7 @@ describe("Homepage visit", () => {
     let homePage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         homePage = new HomePage();
     });
 

@@ -4,7 +4,7 @@ describe('Keypress tests', () => {
     let keyPressPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         keyPressPage = new KeyPressPage();
     });
 

@@ -4,7 +4,7 @@ describe('Challenging DOM Page tests', () => {
     let challengingDomPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         challengingDomPage = new ChallengingDomPage();
     });
 

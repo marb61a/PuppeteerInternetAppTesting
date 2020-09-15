@@ -4,7 +4,7 @@ describe('Checkbox page tests', () => {
     let checkboxPage;
 
     beforeAll(async () => {
-        jest.setTimeout(10000);
+        jest.setTimeout(15000);
         checkboxPage = new CheckboxPage();        
     });
 
